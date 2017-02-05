@@ -283,9 +283,9 @@ curl -X DELETE 'http://localhost:3456/namespaces/movies'
 
 ## Changelog
 
-12/10/15 -- Updated README, new version of GER
-8/02/15 -- Updated readme and bumped version
-5/02/17 -- Updated readme, bump versions, lock npm dependencies, added test coverage section, added ESM section
+* 5/02/17 -- Updated readme, bump versions, lock npm dependencies, added test coverage section, added ESM section
+* 12/10/15 -- Updated README, new version of GER
+* 8/02/15 -- Updated readme and bumped version
 
 
 [coverage-url]: https://github.com/grahamjenson/hapiger/master/coverage/lcov-report/index.html
