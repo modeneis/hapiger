@@ -1,0 +1,22 @@
+verbose: false
+instrumentation:
+    extensions: ['.coffee','.js']
+    dir: .
+    default-excludes: true
+    include-all-sources: false
+reporting:
+    print: summary
+    reports:
+        - lcov
+    dir: ./coverage
+    watermarks:
+        statements: [50, 80]
+        lines: [50, 80]
+        functions: [50, 80]
+        branches: [50, 80]
+check:
+    global:
+        statements: 48
+        lines: 48
+        branches: 38
+        functions: 52

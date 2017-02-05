@@ -272,7 +272,20 @@ curl -X DELETE 'http://localhost:3456/namespaces/movies'
 1. Node.js client [ger-client](https://www.npmjs.com/package/ger-client)
 2. HapiGER NodeJS client [hapigerjs](https://www.npmjs.com/package/hapigerjs)
 
+
+#### ESM
+1. [RethinkDB ESM](https://github.com/grahamjenson/ger_rethinkdb_esm)
+
+
+#### Test Coverage
+* [Code Coverage Report][coverage-url]
+* Run it with: `npm run coverage`
+
 ## Changelog
 
 12/10/15 -- Updated README, new version of GER
 8/02/15 -- Updated readme and bumped version
+5/02/17 -- Updated readme, bump versions, lock npm dependencies, added test coverage section, added ESM section
+
+
+[coverage-url]: https://github.com/grahamjenson/hapiger/master/coverage/lcov-report/index.html

@@ -17,11 +17,12 @@
     "email": "grahamjenson@maori.geek.nz",
     "url": "http://www.maori.geek.nz/"
   },
+  "contributors":["Thomas Modeneis <thomas.modeneis@gmail.com>"],
   "bin": {
     "hapiger": "./bin/hapiger"
   },
   "license": "MIT",
-  "dependencies"  : {
+  "dependencies": {
     "hapi": "10.4.1",
     "joi": "6.9.0",
     "boom": "2.9.0",
@@ -38,12 +39,19 @@
     "moment": "2.9.0"
   },
   "devDependencies": {
-    "mocha": "2.3.3",
     "chai": "3.3.0",
+    "coffee-coverage": "1.0.1",
+    "istanbul": "0.4.5",
+    "mocha": "^2.4.5",
     "request": "2.65.0"
   },
   "scripts": {
-    "build": "./node_modules/.bin/coffee -c lib/*.coffee hapi_ger.coffee",
-    "test": "mocha"
+    "build": "./node_modules/.bin/coffee -c lib/*.coffee index.coffee",
+    "test": "mocha",
+    "coverage": "npm run coverage:rm && npm run coverage:cover && npm run coverage:report && npm run coverage:check",
+    "coverage:cover": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha",
+    "coverage:rm": "rm -rf coverage",
+    "coverage:report": "node_modules/.bin/istanbul report",
+    "coverage:check": "node_modules/.bin/istanbul check-coverage ./coverage/coverage.json"
   }
 }

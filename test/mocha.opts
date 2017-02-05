@@ -1,3 +1,5 @@
 --compilers coffee:coffee-script/register
 --require test/spec_helper
+--require coffee-coverage-loader.js
 --timeout 20000
+--reporter spec
