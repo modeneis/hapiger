@@ -4,7 +4,7 @@
 
 Providing good recommendations can create greater user engagement and directly provide value by recommending items the customer might additionally like. However, many applications don't provide recommendations to users because of the difficulty in implementing a custom engine or the pain of using an off-the-shelf engine.
 
-**HapiGER** is a recommendations service that uses the [Good Enough Recommendations (**GER**)](https://www.npmjs.com/package/ger), a scalable, simple recommendations engine, and the [Hapi.js](http://hapijs.org) framework. It has been developed to be easy to integrate, easy to use and very scalable.
+**HapiGER** is a recommendations service that uses the [Good Enough Recommendations (**GER**)](https://www.npmjs.com/package/ger), a scalable, simple recommendations engine, and the [Hapi.js](https://hapijs.com/) framework. It has been developed to be easy to integrate, easy to use and very scalable.
 
 [Project Site](http://www.hapiger.com)
 
